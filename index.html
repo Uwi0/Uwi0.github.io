@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Social Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+            border: 3px solid white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .links-container {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .link-button {
+            display: block;
+            width: 100%;
+            padding: 15px 20px;
+            margin: 10px 0;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .name {
+            font-size: 24px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .bio {
+            color: #666;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <img src="/api/placeholder/150/150" alt="Profile Picture" class="profile-img">
+        <h1 class="name">Your Name</h1>
+        <p class="bio">Your brief bio or tagline goes here</p>
+    </div>
+
+    <div class="links-container">
+        <a href="https://linkedin.com/in/yourusername" class="link-button">LinkedIn</a>
+        <a href="https://github.com/yourusername" class="link-button">GitHub</a>
+        <a href="https://instagram.com/yourusername" class="link-button">Instagram</a>
+        <a href="https://twitter.com/yourusername" class="link-button">Twitter</a>
+        <!-- Add more social media links as needed -->
+    </div>
+</body>
+</html>
